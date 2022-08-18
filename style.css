@@ -1,3 +1,4 @@
+/*Fontes*/
 @import url('https://fonts.googleapis.com/css2?family=Candal&family=Courier+Prime&family=EB+Garamond:wght@500&family=Gamja+Flower&display=swap');
 .candal{
   font-family: Candal;
@@ -8,32 +9,19 @@
 .courier{
   font-family: Courier;
 }
+/*Cores*/
 /*#4d0000;*/
+/*#024b61*/
 .cinza{
   background-color: #343a40;
   color: white;
 }
-.conteudo{
-  display: flex;
-}
-.border{
-  border-radius: 0px;
-}
-.img{
-  width: 100%;
-  height: 100%;
-  border-radius: 21px 21px 0 0;
-}
-.orientacao{
-  display: flex;
-  justify-content: flex-start;
-}
+/*Banner e Ondas*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 h1 {
   color: #fff;
   font-size: max(60px, 4vw);
@@ -41,8 +29,7 @@ h1 {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: center;
 }
-header,
-section {
+header, section {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -50,13 +37,12 @@ section {
   height: 100vh;
 }
 .
-section {
-  background: #66c3d0;
+.section {
+  background-color: #66c3d0;
 }
 
 header {
   background: #024b61;
-  /*#024b61*/
   position: relative;
 }
 
@@ -66,6 +52,24 @@ header h1 {
   padding: 10px 50px;
   margin: 50px;
   z-index: 2;
+}
+/*Responsividade para o banner*/
+@media screen and (max-width: 400px){ 
+  header h1 {
+  background: #024b61;
+  border: 5px solid white;
+  padding: 5px 25px;
+  margin: 25px;
+  z-index: 2;
+  }
+  h1 {
+  color: #fff;
+  font-size: max(30px, 2vw);
+  font-family: Garamond,Candal, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  }
+  
 }
 
 .waves {
@@ -103,4 +107,28 @@ header h1 {
   from {
     transform: translateX(-1600px);
   }
+}
+/*Tópicos: Maquete e Testes*/
+.img{
+  width: 100%;
+  height: 100%;
+  border-radius: 21px 21px 0 0;
+}
+
+/*Parte final (Sobre nós e Outros Tópicos)*/
+.conteudo{
+  display: flex;
+}
+@media screen and (max-width: 400px){ 
+  .conteudo{
+    flex-wrap: wrap;
+  }
+}
+/*Sobre nós*/
+.border{
+  border-radius: 0px;
+}
+.orientacao{
+  display: flex;
+  justify-content: flex-start;
 }
